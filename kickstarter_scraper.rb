@@ -12,8 +12,9 @@ locations = projects.css("span.location-name").text
 percent_funded = projects.css("li.first.funded").text
 
 projects.each do |project|
-  "Title: #{projects.css("p.bbcard_blurb").text}"
-  
+titles = projects.css("h2.bbcard_name strong a").text
+projects[titles.to_sym] = {}
 end 
 
+projects
 end
