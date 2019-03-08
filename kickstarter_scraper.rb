@@ -10,5 +10,5 @@ description = projects.css("p.bbcard_blurb").text
 locations = projects.css("span.location-name").text
 percent_funded = projects.css("li.first.funded").text
 binding.pry
-further_in
+
 end
