@@ -6,4 +6,5 @@ html = File.read("fixtures/kickstarter.html")
 kickstarter =  Nokogiri::HTML(html)
 kickstarter.css("li.project-grid-4").first.css(".bbcard_name").text
 binding.pry
+#fake
 end
