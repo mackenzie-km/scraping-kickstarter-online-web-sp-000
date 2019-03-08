@@ -6,13 +6,13 @@ def create_project_hash
 html = File.read("fixtures/kickstarter.html")
 kickstarter =  Nokogiri::HTML(html)
 projects = kickstarter.css("li.project.grid_4")
-titles = projects.css("h2.bbcard_name strong a").text
-description = projects.css("p.bbcard_blurb").text
-locations = projects.css("span.location-name").text
-percent_funded = projects.css("li.first.funded").text
 
 projects.each do |project|
-project.css("h2.bbcard_name strong a").text
+title = project.css("h2.bbcard_name strong a").text
+project.css("p.bbcard_blurb").text
+project.css("span.location-name").text
+project.css("li.first.funded").text
+
 #binding.pry
 projects[titles.to_sym] = {}
 
