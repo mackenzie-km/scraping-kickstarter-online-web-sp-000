@@ -9,4 +9,4 @@ projects = kickstarter.css("li.project-grid-4").first.css(".bbcard_name").text
 end
 
 #projects:
-kickstarter.css("li.project-grid-4")
+#kickstarter.css("li.project-grid-4")
