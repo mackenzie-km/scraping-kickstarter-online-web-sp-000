@@ -1,8 +1,7 @@
 require "nokogiri"
 
 def create_project_hash
+html = File.read("/fixtures/kickstarter.html")
+kickstarter =  Nokogiri::HTML(html)
   
 end
-
-
-#Nokogiri::HTML(open("http://165.227.31.156:45268/fixtures/kickstarter.html")
