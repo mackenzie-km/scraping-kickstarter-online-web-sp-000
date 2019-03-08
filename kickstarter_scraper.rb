@@ -13,7 +13,7 @@ percent_funded = projects.css("li.first.funded").text
 
 projects.each do |project|
 project.css("h2.bbcard_name strong a").text
-binding.pry
+#binding.pry
 projects[titles.to_sym] = {}
 
 end 
