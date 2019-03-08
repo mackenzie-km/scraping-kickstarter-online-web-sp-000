@@ -18,5 +18,5 @@ projects[titles.to_sym] = {}
 
 end 
 
-q
+
 end
