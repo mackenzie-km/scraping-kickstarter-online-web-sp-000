@@ -8,7 +8,7 @@ projects = kickstarter.css("li.project.grid_4")
 further_in = projects.css("h2.bbcard_name strong a").text
 description = projects.css("p.bbcard_blurb").text
 locations = projects.css("span.location-name").text
-percent_funded = 
+percent_funded = projects.css("li.first-funded").text
 binding.pry
 further_in
 end
