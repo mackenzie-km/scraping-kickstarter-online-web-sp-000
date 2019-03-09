@@ -16,5 +16,5 @@ project_hash[title.to_sym] = {
 }
 end 
 
-projects
+
 end
