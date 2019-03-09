@@ -9,8 +9,8 @@ kickstarter =  Nokogiri::HTML(html)
 kickstarter.css("li.project.grid_4").collect do |project|
 title = project.css("h2.bbcard_name strong a").text
 project_hash[title.to_sym] = {
-:image_link => project.css("p.bbcard_blurb"),
-:description => project.css("h2.bbcard_name strong a"),
+:image_link => project.css("p.bbcard_blurb").text,
+:description => project.css("h2.bbcard_name strong a").text,
 :location => project.css("span.location-name").text,
 :percent_funded => project.css("li.first.funded").text
 }
