@@ -11,8 +11,9 @@ projects.each do |project|
 title = project.css("h2.bbcard_name strong a").text
 projects[title.to_sym] = {
 :image_link => project.css("div.project-thumbnail a imag").attribute("src").value,
+:description => project.css("h2.bbcard_name strong a"),
 :location => project.css("span.location-name").text,
-:location => project.css("li.first.funded").text
+:percent_funded => project.css("li.first.funded").text
 }
 #binding.pry
 
