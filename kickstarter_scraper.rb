@@ -15,7 +15,7 @@ projects[title.to_sym] = {
 :location => project.css("span.location-name").text,
 :percent_funded => project.css("li.first.funded").text
 }
-#binding.pry
+binding.pry
 
 
 end 
