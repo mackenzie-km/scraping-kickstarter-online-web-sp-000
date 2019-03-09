@@ -17,7 +17,7 @@ projects[title.to_sym] = {
 }
 binding.pry
 
-
+projects
 end 
 
 
